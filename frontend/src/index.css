@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(24, 68, 135, 1),
+    rgba(74, 13, 53, 1),
+    rgba(22, 3, 46, 1)
+  );
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the nagivation bar starts here */
+Button {
+  cursor: pointer;
+}
+
+nav {
+  margin-top: 16px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.logo-box {
+  width: 79px;
+  height: 48;
+}
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.tickets_none {
+  margin-right: 12px;
+}
+
+.nav-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.order_history {
+  margin: 0;
+}
+
+.buttons .order_history svg,
+.view_profile svg {
+  height: 18px;
+  width: 18px;
+  color: #204679;
+}
+
+.badge_cont {
+  display: flex;
+  margin-right: 20px;
+}
+
+.badge_icon {
+  color: #ffff;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 6px 0 6px;
+  border-radius: 100%;
+  height: 60%;
+  padding: 0px 11px 0px 11px;
+  z-index: 5;
+  top: -8px;
+  right: 178px;
+  position: absolute;
+}
+
+.buttons .order_history span,
+.view_profile span {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #204679;
+  padding-left: 12px;
+}
+
+.buttons .view_profile,
+.order_history,
+.view_profile_signedin {
+  height: 40px;
+  width: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #689ce3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view_profile svg {
+  padding-left: 12px;
+  font-size: 24px;
+}
+
+.nav_dropdown {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #204679;
+}
+
+.dropdown-menu {
+  position: relative;
+  z-index: 3;
+  top: 60px;
+  right: 13px;
+}
+
+/* Styling for the nagivation bar ends here */
+
+/* Styling for the promoted movie section starts here */
+.promoted_movie_box {
+  margin: 72px 205px 0px 205px;
+  display: flex;
+  /* align-items: center; */
+}
+
+.promoted_movie_image {
+  width: 295px;
+  height: 455px;
+}
+
+.promoted_movie_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promoted_movie_contents {
+  margin-left: 64px;
+}
+
+.thortitle_box {
+  width: 400px;
+  height: 216px;
+  padding: 21px 0px 21px 0px;
+}
+
+.thortitle_box img {
+  height: 100%;
+  width: 100%;
+}
+
+.now_showing_title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 59px;
+  font-weight: medium;
+  color: #448fec;
+  margin: 0;
+}
+
+.booking_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking_buttons .book_movie,
+.view_movie {
+  height: 38px;
+  width: 162px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.booking_buttons .book_movie {
+  background-color: #689ce3;
+  color: #204679;
+  margin-right: 20px;
+}
+
+.booking_buttons .view_movie {
+  background-color: #2d4666;
+  color: #8faed8;
+}
+
+/* Styling for the promoted movie section ends here */
+
+/* Styling for the filtered movies section starts here */
+.movies {
+  display: flex;
+  flex-direction: column;
+  margin: 87px 205px 0px 205px;
+}
+
+.movie_states {
+  display: flex;
+  align-items: center;
+}
+
+.movie_states h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-right: 43px;
+  cursor: pointer;
+}
+
+.divider {
+  height: 40px;
+  width: 1px;
+  background-color: #faf7f7;
+  margin-right: 43px;
+}
+
+.now_showing {
+  color: #c0d8f7;
+}
+
+.coming_soon {
+  color: #c0d8f7;
+}
+
+.deactive {
+  color: #448fec;
+}
+
+.card_image {
+  width: 190px;
+  height: 280px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.movies_categorised {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin-bottom: 46px;
+  display: flex;
+  height: 442px;
+  width: 190px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9cc7fd;
+}
+
+.card_genre {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: regular;
+  color: #9cc7fd;
+}
+
+.card_button {
+  width: 100%;
+  height: 32px;
+  border: none;
+  background-color: #2d4666;
+  color: #8faed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card_button span {
+  padding-left: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Styling for the filtered movies section ends here */
+
+/* Styling for the movie details starts here */
+
+.view_details_container {
+  margin: 88px 205px 0px 205px;
+  height: 100vh;
+}
+
+.movie_trailer_container {
+  margin: 88px 205px 205px 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react_player_trailer {
+  width: 100%;
+  height: 100%;
+}
+
+.view_details_container {
+  display: flex;
+  align-items: center;
+}
+
+.view_movie_image {
+  width: 200%;
+  height: 455px;
+}
+
+.view_movie_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.view_movie_details {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-left: 105px;
+}
+
+.view_movie_details h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 46px;
+  font-weight: medium;
+  color: #9cc7fd;
+  margin: 0px 0px 20px 0px;
+}
+
+.view_movie_details h5 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9cc7fd;
+  margin: 0;
+  margin: 0px 0px 20px 0px;
+}
+
+.view_movie_details p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #9cc7fd;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Styling for the movie details ends here */
+
+/* Styling for the seating starts here */
+
+.choose_seating_container {
+  /* margin: 72px 0px 0px 0px; */
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.seating_image {
+  height: 450px;
+  width: 450px;
+  margin-right: 62px;
+}
+
+.seating_image img {
+  height: 100%;
+  width: 100%;
+}
+
+.seating_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.seating_details h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  color: #9cc7fd;
+}
+
+.seating_details form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.seating_details form input {
+  height: 27px;
+  width: 70%;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  color: #083872;
+  background-color: #949ca5;
+}
+
+.seating_details form button {
+  height: 29px;
+  width: 30%;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #011329;
+  background-color: #9cc7fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.seating_details form button span {
+  margin-left: 8px;
+}
+
+.seating_details h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #9cc7fd;
+}
+
+.seating_details table {
+  text-align: center;
+}
+
+td,
+th {
+  padding: 8px;
+  border-bottom: 0.5px solid #ddd;
+}
+
+th {
+  color: #9cc7fd;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+td {
+  color: #9cc7fd;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+td button {
+  background-color: #9cc7fd;
+  color: #011329;
+  border: none;
+  border-radius: 2px;
+}
+
+.seating_details h6 span {
+  font-size: 20px;
+}
+
+.proceed_payment {
+  height: 34px;
+  border: none;
+  background-color: #9cc7fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 2px;
+}
+
+.proceed_payment span {
+  margin-left: 16px;
+}
+
+.signin-container {
+  display: flex;
+  align-items: center;
+  /* background-color: #d40707; */
+  margin: 24px 0px 0px 0px;
+  justify-content: space-between;
+}
+
+.signin-details {
+  /* background-color: #09cc19; */
+  margin: 0px 0px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.signin-image {
+  background-color: #ffd000;
+  height: 600px;
+  width: 480px;
+}
+
+.signin-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.signin_title {
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 80px;
+  margin-top: 0;
+  color: #689ce3;
+}
+
+.email_container {
+  background-color: #285ca4;
+  padding: 8px;
+  border-radius: 2px;
+  width: 410px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.email_input {
+  height: 32px;
+  width: 380px;
+  border: none;
+  background: transparent;
+  color: #93acce;
+}
+
+.email_input::placeholder {
+  color: #93acce;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.email_icon {
+  margin-right: 8px;
+}
+
+.icon_signin {
+  color: #c0cad8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.email_input:focus {
+  outline: none;
+  color: #93acce;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.signin_signup_container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sign_in_button,
+.register-button {
+  height: 36px;
+  width: 120px;
+  background-color: #689ce3;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #204679;
+  font-size: 16px;
+}
+
+.sign_in_button {
+  margin-right: 20px;
+}
+
+.sign_in_button span,
+.register-button span {
+  margin-left: 8px;
+}
+
+/* This is the styling for Payment page */
+
+.payment_container {
+  margin: 88px 205px 205px 205px;
+  height: 100vh;
+}
+
+.paymentTitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-top: 0;
+  color: #689ce3;
+}
+
+.paypal,
+.stripe {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #689ce3;
+  cursor: pointer;
+}
+
+.submit_pay_button {
+  margin-top: 32px;
+}
+
+.payment_button {
+  height: 36px;
+  width: 128px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #689ce3;
+  color: #204679;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.payment_button span {
+  padding-left: 8px;
+}
+
+/* This is the styling for the plcaing order page */
+
+.placeOrder_container {
+  margin: 76px 100px 0px 100px;
+}
+
+.placeOrderTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #689ce3;
+}
+
+.row_wrap {
+  display: flex;
+  margin-top: 32px;
+}
+
+.column1 {
+  /* background-color: yellow; */
+  width: 50%;
+}
+
+.column2 {
+  width: 40%;
+}
+
+.card1 {
+  background-color: #689be35b;
+  border: 1px ridge grey;
+  border-radius: 10px;
+  width: 83%;
+  padding-left: 100px;
+  padding-top: 22px;
+  height: 150px;
+  margin-bottom: 12px;
+  color: #689ce3;
+}
+
+.card2 {
+  background-color: #689be35b;
+  border: 1px ridge grey;
+  border-radius: 10px;
+  width: 83%;
+  padding-left: 100px;
+  padding-top: 22px;
+  height: 150px;
+  color: #689ce3;
+}
+
+.card3 {
+  background-color: #689be35b;
+  opacity: unset;
+  margin-left: 20px;
+  width: 320px;
+  border: 1px ridge grey;
+  border-radius: 10px;
+  padding-left: 100px;
+  padding-top: 72px;
+  height: 285px;
+  color: #689ce3;
+}
+
+.card_title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #689ce3;
+}
+
+.order_summary {
+  margin-bottom: 20px;
+}
+
+.card_text {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.card_text strong,
+.card_text span {
+  font-weight: bold;
+  padding-right: 12px;
+}
+
+.card_text .texts {
+  padding-bottom: 4px;
+}
+
+.paddingdown {
+  padding-bottom: 8px;
+}
+
+.subtotal {
+  padding-top: 32px;
+  font-size: 22px;
+}
+
+.subtotal strong {
+  font-size: 32px;
+}
+
+.placeorder {
+  width: 180px;
+  margin-top: 20px;
+}
